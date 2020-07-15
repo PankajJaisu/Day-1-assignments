@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 assignment 2</title>
+<script>
+document.write("<h2>Difference between var,let,const</h2>")
+document.write('<h3>1]var: The scope of a variable defined with the keyword var is limited to the function within which it is defined. If it is defined outside any function, the scope of the variable is global.<mark>var is function scoped</mark>')
+document.write('\n <h4>2]let: The scope of a variable defined with the keyword <mark>let</mark> or <mark>const</mark> is limited to the <mark>block</mark> defined by curly braces i.e. {} let and const are<mark>block scoped</mark>.</h4>')
+document.write('\n<h4>3]const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.<mark> const</mark> cannot be re-assigned to a new value. However it CAN be mutated.</h4>')
+var B=12
+console.log('the value of B outside block before changing ',B)
+{
+    let B=22
+    console.log('the value of B inside block',B)//the value of varibale created using let will have the local scope i.e within function 
+}
+console.log('the value of B outside block after changing ',B)//it is working as global variable
+
+const pi=3.14
+console.log(pi)
+pi=2
+console.log(pi)//since constant variable cannot be change.therefore it will throw error
+</script>
+</head>
+<body>
+</body>
+</html>
